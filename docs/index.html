@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <title>Sphinxでドキュメント作成を練習</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/black.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/slides.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides">
+            <section >
+<h1>Sphinxでドキュメント作成を練習</h1>
+</section>
+<section >
+<h2>画像を貼る</h2>
+<div class="line-block">
+<div class="line">準備1適当に何かを書く</div>
+<div class="line">画像を表現。</div>
+</div>
+<figure class="align-default" id="id18">
+<a class="reference internal image-reference" href="_images/tree.jpg"><img alt="tree and sunset" src="_images/tree.jpg" style="width: 640.0px; height: 398.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">tree and sunset.</span></p>
+</figcaption>
+</figure>
+</section>
+<section>
+<section >
+<h2>テーブル</h2>
+</section>
+<section >
+<h3>簡単なテーブル</h3>
+<p>簡単なテーブルを表現。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 35%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>col1</p></th>
+<th class="head"><div class="line-block">
+<div class="line">col2</div>
+<div class="line">col2</div>
+</div>
+</th>
+<th class="head"><p>col3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>row1</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-odd"><td><p>row2</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-even"><td><p>row3</p></td>
+<td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>グリッドテーブル</h3>
+<p>グリッドテーブルを表現。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 26%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1
+(header rows optional)</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td colspan="2"><p>column 2</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>body row 2</p></td>
+<td><p>...</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>CSVテーブル</h3>
+<table class="colwidths-given docutils align-default" id="id19">
+<caption><span class="caption-text">Frozen Delights!</span></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Treat</p></th>
+<th class="head"><p>Quantity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albatross</p></td>
+<td><p>2.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crunchy Frog</p></td>
+<td><p>1.49</p></td>
+<td><p>If we took the bones out, it wouldn't be
+crunchy, now would it?</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>リストテーブル</h3>
+<table class="colwidths-given docutils align-default" id="id20">
+<caption><span class="caption-text">Frozen Delights!</span></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Treat</p></th>
+<th class="head"><p>Quantity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Albatross</p></td>
+<td><p>2.99</p></td>
+<td><p>On a stick!</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crunchy Frog</p></td>
+<td><p>1.49</p></td>
+<td><p>If we took the bones out, it wouldn't be
+crunchy, now would it?</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section >
+<h2>セルにリストを入れる</h2>
+</section>
+<section >
+<h3>list-tableの場合</h3>
+<table class="colwidths-given docutils align-default" id="id21">
+<caption><span class="caption-text">各国の代表都市</span></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>国</p></th>
+<th class="head"><p>代表都市</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>日本</p></td>
+<td><ul class="simple">
+<li><p>東京</p></li>
+<li><p>大阪</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>中国</p></td>
+<td><ul class="simple">
+<li><p>北京</p></li>
+<li><p>上海</p></li>
+<li><p>広州</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>csv-tableの場合</h3>
+<table class="colwidths-given docutils align-default" id="id22">
+<caption><span class="caption-text">各国の代表都市</span></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>国</p></th>
+<th class="head"><p>代表都市</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>日本</p></td>
+<td><ul class="simple">
+<li><p>東京</p></li>
+<li><p>大阪</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>中国</p></td>
+<td><ul class="simple">
+<li><p>北京</p></li>
+<li><p>上海</p></li>
+<li><p>広州</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section >
+<h2>注釈と警告</h2>
+</section>
+<section >
+<h3>注釈</h3>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>これは注釈である。</p>
+</div>
+</section>
+<section >
+<h3>警告</h3>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>これは警告である。</p>
+</div>
+</section>
+</section>
+<section >
+<h2>ファイル引用</h2>
+<pre data-id="id10"><code data-trim data-noescape class="python" data-line-numbers>#!/usr/bin/env python
+
+import numpy as np
+import matplotlib.pyplot as plt
+ 
+# 乱数を生成
+x = np.random.rand(100)
+y = np.random.rand(100)
+ 
+# 散布図を描画
+plt.scatter(x, y)
+plt.show()
+</code></pre>
+</section>
+<section >
+<h2>コメント</h2>
+<aside class="notes">
+This is a comment.
+This whole indented block
+is a comment.
+
+Still in the comment.</aside>
+<p>ここはコメントではない。</p>
+</section>
+<section >
+<h2>リンク</h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://sphinx-doc.org/">http://sphinx-doc.org/</a></p></li>
+<li><p><a class="reference external" href="https://github.com">github</a></p></li>
+<li><p><a class="reference external" href="http://sphinx-users.jp/">Sphinx-users.jp</a></p></li>
+</ul>
+</section>
+<section>
+<section >
+<h2>箇条書き</h2>
+</section>
+<section >
+<h3>番号あり箇条書き</h3>
+<p>2020年の世界GDPランキングTOP3</p>
+<ol class="arabic simple">
+<li><p>米国</p></li>
+<li><p>中国</p>
+<ol class="loweralpha simple">
+<li><p>広東省</p></li>
+<li><p>江苏省</p></li>
+<li><p>山東省</p></li>
+</ol>
+</li>
+<li><p>日本</p></li>
+</ol>
+</section>
+<section >
+<h3>番号なし箇条書き</h3>
+<ul class="simple">
+<li><p>米国</p></li>
+<li><p>中国</p>
+<ul>
+<li><p>広東省</p></li>
+<li><p>江苏省</p></li>
+<li><p>山東省</p></li>
+</ul>
+</li>
+<li><p>日本</p></li>
+</ul>
+</section>
+</section>
+<section >
+<h2>引用ブロック</h2>
+<p>この行は引用前</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">これは引用行1</div>
+<div class="line">これは引用行2</div>
+<div class="line">これは引用行3</div>
+</div>
+</div></blockquote>
+<p>この行は引用後</p>
+</section>
+<section >
+<h2>コードブロック</h2>
+<p>この行はコード前</p>
+<pre data-id="id17"><code data-trim data-noescape class="default">def fizzbuzz(a):
+  print &quot;fizzbuzz&quot;</code></pre>
+<p>この行はコード後</p>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        
+        
+        
+        
+          revealjsConfig.plugins = [
+            
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>

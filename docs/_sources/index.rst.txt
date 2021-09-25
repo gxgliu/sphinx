@@ -1,0 +1,145 @@
+========================================
+Sphinxでドキュメント作成を練習
+========================================
+
+画像を貼る
+========================================
+
+| 準備1適当に何かを書く
+| 画像を表現。
+
+.. figure:: images/tree.jpg
+   :scale: 50
+   :alt: tree and sunset
+
+   tree and sunset.
+
+テーブル
+========================================
+
+簡単なテーブル
+------------------------
+
+簡単なテーブルを表現。
+
+======= ======= ======
+ col1   | col2   col3
+        | col2
+======= ======= ======
+row1    a       b
+row2    a       b
+row3    a       b
+======= ======= ======
+
+グリッドテーブル
+------------------------
+
+グリッドテーブルを表現。
+
++------------------------+------------+----------+
+| Header row, column 1   | Header 2   | Header 3 |
+| (header rows optional) |            |          |
++========================+============+==========+
+| body row 1, column 1   | column 2              |
++------------------------+------------+----------+
+| body row 2                          | ...      |
++------------------------+------------+----------+
+
+CSVテーブル
+------------------------
+
+.. csv-table:: Frozen Delights!
+   :header: "Treat", "Quantity", "Description"
+   :widths: 15, 10, 30
+
+   "Albatross", 2.99, "On a stick!"
+   "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
+   crunchy, now would it?"
+
+リストテーブル
+------------------------
+
+.. list-table:: Frozen Delights!
+   :widths: 15 10 30
+   :header-rows: 1
+
+   * - Treat
+     - Quantity
+     - Description
+   * - Albatross
+     - 2.99
+     - On a stick!
+   * - Crunchy Frog
+     - 1.49
+     - If we took the bones out, it wouldn't be
+       crunchy, now would it?
+
+セルにリストを入れる
+======================
+
+list-tableの場合
+------------------
+
+.. list-table:: 各国の代表都市
+   :widths: 15 15
+   :header-rows: 1
+
+   * - 国
+     - 代表都市
+   * - 日本
+     - * 東京
+       * 大阪
+   * - 中国
+     - * 北京
+       * 上海
+       * 広州
+
+csv-tableの場合
+----------------
+
+.. csv-table:: 各国の代表都市
+   :header: "国", "代表都市"
+   :widths: 15, 15
+
+   "日本", "
+   * 東京
+   * 大阪"
+   "中国", "
+   * 北京
+   * 上海
+   * 広州"
+
+注釈と警告
+===========
+
+注釈
+------
+
+.. note::
+   これは注釈である。
+
+警告
+------
+
+.. warning::
+   これは警告である。
+
+ファイル引用
+=============
+
+.. literalinclude:: test.py
+    :language: python
+    :linenos:
+
+コメント
+=============
+
+.. This is a comment.
+   This whole indented block
+   is a comment.
+
+   Still in the comment.
+
+ここはコメントではない。
+
+.. include:: other_exec.rst
